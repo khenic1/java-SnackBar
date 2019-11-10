@@ -24,16 +24,29 @@ class Main {
         System.out.println(jane.getCash());
         System.out.println(pretzels.getQuantity());
 
+        bob.buy(soda, 2);
+        System.out.println(bob.getCash());
+        System.out.println(soda.getQuantity());
+
+        jane.addCash(10.0);
+        System.out.println(jane.getCash());
+
+        jane.buy(chocolate, 1);
+        System.out.println(jane.getCash());
+        System.out.println(chocolate.getQuantity());
+
+        pretzels.addQuantity(12);
+         System.out.println(pretzels.getQuantity());
+
+         bob.buy(pretzels, 3);
+         System.out.println(bob.getCash());
+         System.out.println(pretzels.getQuantity());
+
 
 
     }
 }
 
-// 1. Customer 2 (Bob) buys 2 of snack 4 (Sode). Print Customer 2 (Bob) Cash on Hand. Print quantity of snack 4 (Soda).
-// 1. Customer 1 (Jane) finds $10. Print Customer 1 (Jane) Cash on Hand.
-// 1. Customer 1 (Jane) buys 1 of snack 2 (Chocolate Bar). Print Customer 1 (Jane) Cash on Hand. Print quantity of snack 2 (Chocolate Bar).
-// 1. Add 12 more items to snack 3 (Pretzel). Print quantity of snack 3 (Pretzel).
-// 1. Customer 2 (Bob) buys 3 of snack 3 (Pretzel). Print Customer 2 (Bob) Cash on hand. Print quantity of snack 3 (Pretzel).
 
 // * Stretch Goals
 
