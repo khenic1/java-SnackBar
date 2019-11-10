@@ -24,16 +24,18 @@ class Customer {
     }
 
     public void addCash(double amount) {
-        cash -= amount;
+        cash += amount;
     }
-
+    public void buy(Snack snack, int amount) {
+       double cost = snack.getCost(amount);
+       if (this.cash >= cost) {
+           snack.buySnack(amount);
+           this.cash -= cost; 
+       }
+    }
 
 
 }
 
 
 
-## Customer
-
-Customer has id, name, cash on hand. 
-Customer can add cash, buy given total cash used in purchase, get and set name, get cash on hand.  
